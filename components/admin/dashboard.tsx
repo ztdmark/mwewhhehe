@@ -337,8 +337,8 @@ const Dashboard: React.FC = () => {
   ]
 
   return (
-    <main className="bg-background min-h-screen">
-      <div className="px-6 max-w-7xl mx-auto space-y-3 sm:space-y-4">
+    <main className="bg-background h-full overflow-y-auto">
+      <div className="px-6 max-w-7xl mx-auto space-y-3 sm:space-y-4 py-6">
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-4 sm:space-y-0">
         <div className="min-w-0">
