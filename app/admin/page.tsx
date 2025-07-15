@@ -17,15 +17,15 @@ import {
 
 export default function Page() {
   return (
-    <div className="h-screen overflow-hidden">
+    <div className="h-screen overflow-hidden fixed inset-0">
       <div
         className="fixed inset-0 z-[-1] bg-cover bg-center"
         style={{ backgroundImage: "url('/background.png')" }}
       />
       <SidebarProvider>
         <AppSidebar />
-        <SidebarInset className="flex flex-col h-screen"> 
-          <header className="flex h-16 shrink-0 items-center gap-2 border-b">
+        <SidebarInset className="flex flex-col h-full"> 
+          <header className="flex h-16 shrink-0 items-center gap-2 border-b bg-background">
             <div className="flex items-center gap-2 px-4">
               <SidebarTrigger className="-ml-1" />
               <Separator
@@ -47,7 +47,7 @@ export default function Page() {
               </Breadcrumb>
             </div>
           </header>
-          <div className="flex-1 overflow-hidden">
+          <div className="flex-1 overflow-hidden min-h-0">
             <Dashboard />
           </div>
         </SidebarInset>
