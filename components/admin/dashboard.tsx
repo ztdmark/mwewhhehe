@@ -426,6 +426,9 @@ const Dashboard: React.FC = () => {
         </div>
       </div>
       </div>
+      
+      {/* Bottom Extension */}
+      <div className="bg-black/90 backdrop-blur-sm rounded-t-3xl mt-8 h-32 w-full" />
     </main>
   )
 }
