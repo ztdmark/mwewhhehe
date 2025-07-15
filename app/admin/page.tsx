@@ -47,7 +47,7 @@ export default function Page() {
               </Breadcrumb>
             </div>
           </header>
-          <div className="flex-1 overflow-hidden rounded-b-xl">
+          <div className="flex-1 overflow-hidden">
             <Dashboard />
           </div>
         </SidebarInset>
